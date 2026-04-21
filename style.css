@@ -654,6 +654,15 @@ p {
        z-index: 999;
     }
 
+    .close-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: #2afc85;
+        cursor: pointer;
+    }
+
     /* ACTIVE */
 
     .nav-menu.active {
