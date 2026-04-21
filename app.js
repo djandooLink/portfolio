@@ -48,3 +48,19 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
         navMenu.classList.remove("active");
     });
 });
+
+const closeMenu = document.querySelector('.close-menu');
+
+closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+})
+
+document.addEventListener('click', (e) => {
+    if (
+        navMenu.classList.contains('active') && 
+        !navMenu.contains(e.target) &&
+        !menuToggle.contains(e.target)
+    ) {
+        navMenu.classList.remove('active');
+    }
+})
