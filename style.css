@@ -544,6 +544,12 @@ p {
         margin: 10px auto;
     }
 
+    /* LOGO - TEXT */
+
+    .logo-text {
+        display: none;
+    }
+
     /* SOCIAL ICONS*/
 
     .social-icons {
