@@ -27,10 +27,6 @@ body {
     display: none;
 }
 
-.close-menu {
-    display: none;
-}
-
 .container {
     background: linear-gradient(135deg, #0c0f17 0%, #151925 100%);
     width: 900px;
@@ -539,6 +535,10 @@ p {
     color: #888;
 }
 
+.close-menu {
+    display: none;
+}
+
 /* ======= RESPONSIVE ======= */
 
 @media (max-width: 768px) {
@@ -553,6 +553,7 @@ p {
     .logo-text {
         display: none;
     }
+
 
     /* SOCIAL ICONS*/
 
@@ -585,10 +586,6 @@ p {
     }
 
     /* NAVBAR */
-
-    nav ul {
-        display: none;
-    }
 
     .menu-toggle {
         display: block;
@@ -648,7 +645,7 @@ p {
         background: #0c0f17;
         backdrop-filter: blur(10px);
     
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -658,7 +655,13 @@ p {
        z-index: 999;
     }
 
-    .close-menu {
+    .nav-menu.active {
+        display: flex;
+        right: 0;
+    }
+
+    .close-menu { 
+        display: block;
         position: absolute;
         top: 20px;
         right: 20px;
